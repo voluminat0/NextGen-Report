@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.4)  22 DEC 2015 12:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.3.4)  22 DEC 2015 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -300,35 +300,84 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rotFPbot=\skip45
 \rot@float@box=\box27
 \rot@mess@toks=\toks19
-) (./report.aux)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/05/09 v2.6d package option processing (HA)
+
+(/usr/local/texlive/2014/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
+\XKV@depth=\count90
+File: xkeyval.tex 2014/05/09 v2.6d key=value parser (HA)
+))
+(/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box28
+)
+\tc@llx=\dimen106
+\tc@lly=\dimen107
+\tc@urx=\dimen108
+\tc@ury=\dimen109
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen110
+\adjbox@Height=\dimen111
+\adjbox@Depth=\dimen112
+\adjbox@Totalheight=\dimen113
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
+\c@checkoddpage=\count91
+)
+(/usr/local/texlive/2014/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box29
+\sift@deathcycles=\count92
+\@vwid@loff=\dimen114
+\@vwid@roff=\dimen115
+))
+(./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count90
-\scratchdimen=\dimen106
-\scratchbox=\box28
-\nofMPsegments=\count91
-\nofMParguments=\count92
-\everyMPshowfont=\toks20
-\MPscratchCnt=\count93
-\MPscratchDim=\dimen107
-\MPnumerator=\count94
-\makeMPintoPDFobject=\count95
-\everyMPtoPDFconversion=\toks21
+\scratchcounter=\count93
+\scratchdimen=\dimen116
+\scratchbox=\box30
+\nofMPsegments=\count94
+\nofMParguments=\count95
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count96
+\MPscratchDim=\dimen117
+\MPnumerator=\count97
+\makeMPintoPDFobject=\count98
+\everyMPtoPDFconversion=\toks23
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -378,33 +427,17 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 11.
+(Font)              <12> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 11.
+(Font)              <8> on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 11.
-
-
-LaTeX Warning: No \author given.
-
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 15.
-
-LaTeX Font Info:    No file OMScmtt.fd. on input line 15.
-
-LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 15.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--17
-
- []
+(Font)              <6> on input line 27.
 
 (./report.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 2.
+(Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 2.
+(Font)              <5> on input line 3.
 )
 \tf@toc=\write3
 \openout3 = `report.toc'.
@@ -412,34 +445,97 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
- (./report.aux)
+ [4] [5] <./Images/graph1.png, id=29, 297.11pt x 208.78pt>
+File: ./Images/graph1.png Graphic file (type png)
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+<use ./Images/graph1.png>
+Package pdftex.def Info: ./Images/graph1.png used on input line 122.
+(pdftex.def)             Requested size: 319.99997pt x 224.87372pt.
 
- ) 
+<./Images/graph2.png, id=31, 299.1175pt x 205.76875pt>
+File: ./Images/graph2.png Graphic file (type png)
+
+<use ./Images/graph2.png>
+Package pdftex.def Info: ./Images/graph2.png used on input line 133.
+(pdftex.def)             Requested size: 319.99997pt x 220.14839pt.
+ [6 <./Images/graph1.png> <./Images/graph2.png>]
+<./Images/graph3.png, id=37, 301.125pt x 206.7725pt>
+File: ./Images/graph3.png Graphic file (type png)
+ <use ./Images/graph3.png>
+Package pdftex.def Info: ./Images/graph3.png used on input line 144.
+(pdftex.def)             Requested size: 319.99997pt x 219.75517pt.
+
+<./Images/graph4.png, id=38, 304.13625pt x 209.78375pt>
+File: ./Images/graph4.png Graphic file (type png)
+
+<use ./Images/graph4.png>
+Package pdftex.def Info: ./Images/graph4.png used on input line 155.
+(pdftex.def)             Requested size: 319.99997pt x 220.73076pt.
+ [7 <./Images/graph3.png> <./Images/graph4.png>]
+<./Images/graph5.png, id=45, 299.1175pt x 206.7725pt>
+File: ./Images/graph5.png Graphic file (type png)
+
+<use ./Images/graph5.png>
+Package pdftex.def Info: ./Images/graph5.png used on input line 167.
+(pdftex.def)             Requested size: 319.99997pt x 221.22229pt.
+
+<./Images/graph6.png, id=46, 299.1175pt x 206.7725pt>
+File: ./Images/graph6.png Graphic file (type png)
+
+<use ./Images/graph6.png>
+Package pdftex.def Info: ./Images/graph6.png used on input line 178.
+(pdftex.def)             Requested size: 319.99997pt x 221.22229pt.
+ [8 <./Images/graph5.png> <./Images/graph6.png>]
+<./Images/graph7.png, id=52, 300.12125pt x 210.7875pt>
+File: ./Images/graph7.png Graphic file (type png)
+
+<use ./Images/graph7.png>
+Package pdftex.def Info: ./Images/graph7.png used on input line 190.
+(pdftex.def)             Requested size: 319.99997pt x 224.76848pt.
+ <./Images/graph8.png, id=53, 297.11pt x 207.77625pt>
+File: ./Images/graph8.png Graphic file (type png)
+
+<use ./Images/graph8.png>
+Package pdftex.def Info: ./Images/graph8.png used on input line 201.
+(pdftex.def)             Requested size: 319.99997pt x 223.7926pt.
+ [9 <./Images/graph7.png> <./Images/graph8.png>]
+<./Images/graph9.png, id=59, 303.1325pt x 208.78pt>
+File: ./Images/graph9.png Graphic file (type png)
+ <use ./Images/graph9.png>
+Package pdftex.def Info: ./Images/graph9.png used on input line 213.
+(pdftex.def)             Requested size: 319.99997pt x 220.40097pt.
+
+<./Images/graph10.png, id=60, 305.14pt x 208.78pt>
+File: ./Images/graph10.png Graphic file (type png)
+ <use ./Images/graph10.png>
+Package pdftex.def Info: ./Images/graph10.png used on input line 224.
+(pdftex.def)             Requested size: 319.99997pt x 218.95465pt.
+
+[10 <./Images/graph9.png> <./Images/graph10.png>] [11] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 2147 strings out of 493117
- 30483 string characters out of 6135434
- 93359 words of memory out of 5000000
- 5583 multiletter control sequences out of 15000+600000
- 8409 words of font info for 30 fonts, out of 8000000 for 9000
+ 2919 strings out of 493117
+ 43273 string characters out of 6135434
+ 108591 words of memory out of 5000000
+ 6312 multiletter control sequences out of 15000+600000
+ 8578 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,23p,676b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/tex
-live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on report.pdf (3 pages, 132560 bytes).
+ 38i,8n,35p,1211b,370s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/lo
+cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on report.pdf (11 pages, 328595 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 41 compressed objects within 1 object stream
+ 105 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

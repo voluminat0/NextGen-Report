@@ -4,16 +4,28 @@
 \usepackage{graphicx}
 \usepackage{color}
 \usepackage{rotating}
+\usepackage{adjustbox}
 
-\title{Next Generation User Interfaces: Report}
+\title{Next Generation User Interface: \\Redefining file browsing}
+\author{
+  De Bleser, Jonas\\
+  \texttt{jdeblese@vub.ac.be}\\
+  Rollnumber: 0508848
+  \and
+  Carraggi, Nicolas\\
+  \texttt{ncarragg@vub.ac.be}\\
+  Rollnumber: 0093262
+  \and
+  Spruyt, Valentijn\\
+  \texttt{vspruyt@vub.ac.be}\\
+  Rollnumber: 0508466
+}
+\date{\today}
+
 \begin{document}
 
 \maketitle
 
-\author{Jonas De Bleser, Nicolas Carraggi, Valentijn Spruyt}
-\newline
-\centerline{\texttt{\{jdeblese, ncarragg, vspruyt\}@vub.ac.be}}
-\newline
 
 \tableofcontents
 
@@ -75,22 +87,166 @@ One of the biggest challenges of this project was the Marionette.js\footnote{htt
 
 TODO: Jonas zet nog wa bij die motivatie as ge wilt over marionette. 
 
-\subsubsection{MYO}
-onnauwkeurigheid, calibratie, slechts 1 armband dus 1 iemand per keer kan met myo werken en testen.
+\subsubsection{Myo}
+The Myo\footnote{https://www.myo.com/} bracelet is a something which can be used in a wide range of applications. When we watched a demo video, we immediately thought that it would be a nice thing to use for uit NGUI project. The nice thing about the bracelet is that it already supports several basic gestures and that it can detect spatial arm movement, next to just gestures of the lower-arm. However, when we started the project, we thought of adding custom gestures which were detectable by the bracelet. We saw fairly soon that this wouldn't be optimal since it was already difficult enough for the bracelet to detect the basic gestures. This was a big issue for the development of our project. When we tried to test our application with gesture \texttt{X}, the chances were that the bracelet detected gesture \texttt{Y} instead, which lead to great frustration.
+Another issue was the problem that comes with working with hardware, rather than software alone: Only one team member could take the Myo bracelet home and do some testing and programming with it. This caused delays in the development process, since it was very hard to synchronize work progress. An example: We decided to implement feature \texttt{A} in our application. One teammember had set up the layout and views of the feature, another member coded some processing functions for the feature and the third teammember was in charge of writing the code to send the myo gestures to our clientside JavaScript. The problem was that, obviously, not everyone could work for the project 24/24 hours every day. This made development slower because we sometimes had to wait on another member to finish his assigned task. The other members couldn't just go and drive several tens of kilometers to go and fetch the Myo bracelet, so that they could write the code themselves.
+A last issue was that the Myo bracelet needs some warming up and synchronization before you can use it. This synchronization phase requires the user to perform a \textit{wave-out} gesture for several seconds to even a minute long. This resulted into cramps in our lower arm more than once.
+
+TODO: NICO iets over calibratie ofzo?
 
 
 \subsubsection{JxBrowser}
+Tijd om license te krijgen
 responsiveness enzo, events doorsturen,
 
+To bridge the gap between Java and JavaScript, we used the JxBrowser component. When we initially looked the component up, it looked very promising. A 30-day trial was available so we could start right away. After that we could get a free educational license, after filling in some forms. We soon realized that the JxBrowser component was rather processor-heavy, and that its responsivenes was sometimes rather low. The component came in the form of a \textit{.jar} file, and modified something in the registry of our computer, so that we couldn't just use a new 30-day trial when the old one expired. This lead to several problems. In order to obtain an educational license, we first had to fill in a form with some information about the VUB. After that, we also had to ask Dr. Signer to send a recommandation mail to confirm that we are indeed students at the VUB. When the developers of the JxBrowser component finally sent us the license, it didn't work. There was some sort of bug that didn't change the registry key, so we kept getting the error that our 30-day trial had expired. By the time that we figured this out together with the developers, we had lost quite some time.
 
+Todo jonas over JS single threaded shit
 
+\newpage
 \section{Evaluation}
 
 \subsection{Self-evaluation}
-\subsection{Questionnaire}
+TODO ALOT OF TEXT
+
 \subsection{Evaluation by others}
+In this section we will discuss how others evaluated our project. First, we will take a look at the results from te questionnaire. After that, we will discuss these results by analyzing the feedback that we got from the evaluators.
+\newpage
+\subsubsection{Questionnaire}
 
-Zelf gedaan + vragenlijst laten rondgaan en laten gebruiken door ouders?
+\begin{itemize}
+		\item[] \textbf{Question 1:} I think I would use the product often
+		\item[] \begin{minipage}[t]{\linewidth}
+         	 \raggedright
+          	\adjustbox{valign=t}{%
+            		\includegraphics[width=1\linewidth]{./Images/graph1.png}%
+          	}
+          	\medskip
+          	\centerline{Graph 1: Answers to question 1}
+          \end{minipage}
+\end{itemize}
+\begin{itemize}
+		\item[] \textbf{Question 2:} I find the product unnecessarily complex
+		\item[] \begin{minipage}[t]{\linewidth}
+         	 \raggedright
+          	\adjustbox{valign=t}{%
+            		\includegraphics[width=1\linewidth]{./Images/graph2.png}%
+          	}
+          	\medskip
+          	\centerline{Graph 2: Answers to question 2}
+          \end{minipage}
+\end{itemize}
+\begin{itemize}
+		\item[] \textbf{Question 3:} I find the product easy to use
+		\item[] \begin{minipage}[t]{\linewidth}
+         	 \raggedright
+          	\adjustbox{valign=t}{%
+            		\includegraphics[width=1\linewidth]{./Images/graph3.png}%
+          	}
+          	\medskip
+          	\centerline{Graph 3: Answers to question 3}
+          \end{minipage}
+\end{itemize}
+\begin{itemize}
+		\item[] \textbf{Question 4:} I think I would need a technical person to use this product
+		\item[] \begin{minipage}[t]{\linewidth}
+         	 \raggedright
+          	\adjustbox{valign=t}{%
+            		\includegraphics[width=1\linewidth]{./Images/graph4.png}%
+          	}
+          	\medskip
+          	\centerline{Graph 4: Answers to question 4}
+          \end{minipage}
+\end{itemize}
+\newpage
+\begin{itemize}
+		\item[] \textbf{Question 5:} I find that the different functions of the product are clear
+		\item[] \begin{minipage}[t]{\linewidth}
+         	 \raggedright
+          	\adjustbox{valign=t}{%
+            		\includegraphics[width=1\linewidth]{./Images/graph5.png}%
+          	}
+          	\medskip
+          	\centerline{Graph 5: Answers to question 5}
+          \end{minipage}
+\end{itemize}
+\begin{itemize}
+		\item[] \textbf{Question 6:} I find the product inconsistent
+		\item[] \begin{minipage}[t]{\linewidth}
+         	 \raggedright
+          	\adjustbox{valign=t}{%
+            		\includegraphics[width=1\linewidth]{./Images/graph6.png}%
+          	}
+          	\medskip
+          	\centerline{Graph 6: Answers to question 6}
+          \end{minipage}
+\end{itemize}
+\newpage
+\begin{itemize}
+		\item[] \textbf{Question 7:} I think most people will easily learn to work with the product
+		\item[] \begin{minipage}[t]{\linewidth}
+         	 \raggedright
+          	\adjustbox{valign=t}{%
+            		\includegraphics[width=1\linewidth]{./Images/graph7.png}%
+          	}
+          	\medskip
+          	\centerline{Graph 7: Answers to question 7}
+          \end{minipage}
+\end{itemize}
+\begin{itemize}
+		\item[] \textbf{Question 8:} I find the product awkward to work with
+		\item[] \begin{minipage}[t]{\linewidth}
+         	 \raggedright
+          	\adjustbox{valign=t}{%
+            		\includegraphics[width=1\linewidth]{./Images/graph8.png}%
+          	}
+          	\medskip
+          	\centerline{Graph 8: Answers to question 8}
+          \end{minipage}
+\end{itemize}
+\newpage
+\begin{itemize}
+		\item[] \textbf{Question 9:} I find it easy to see what functions are available when using the product
+		\item[] \begin{minipage}[t]{\linewidth}
+         	 \raggedright
+          	\adjustbox{valign=t}{%
+            		\includegraphics[width=1\linewidth]{./Images/graph9.png}%
+          	}
+          	\medskip
+          	\centerline{Graph 9: Answers to question 9}
+          \end{minipage}
+\end{itemize}
+\begin{itemize}
+		\item[] \textbf{Question 10:} I had to learn a lot before being able to use the product
+		\item[] \begin{minipage}[t]{\linewidth}
+         	 \raggedright
+          	\adjustbox{valign=t}{%
+            		\includegraphics[width=1\linewidth]{./Images/graph10.png}%
+          	}
+          	\medskip
+          	\centerline{Graph 10: Answers to question 10}
+          \end{minipage}
+\end{itemize}
 
+
+\subsubsection{Explanation}
+
+
+
+
+
+
+
+
+
+
+
+Source code (December 23): The source code of your next generation user interface together with
+detailed and complete instructions on how to run it (i.e. step by step instructions together with possible
+dependencies, required software and technologies, etc.). Note that your source code should be
+documented: every important method and class should be annotated with a description of its goal and
+functionality. If you use a tutorial, open source framework or other online code, you have to mention
+this and cite the author’s website. We check for code plagiarism! The source code has to be sent to
+Sandra Trullemans (strullem@vub.ac.be).
 
 \end{document}
