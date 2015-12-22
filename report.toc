@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {1}Problem statement}{1}
+\contentsline {subsection}{\numberline {1.1}Requirements analysis}{2}
+\contentsline {subsection}{\numberline {1.2}Usability requirements}{2}
+\contentsline {section}{\numberline {2}Design and iteractions}{2}
+\contentsline {section}{\numberline {3}Technical report}{2}
+\contentsline {subsection}{\numberline {3.1}Architecture}{3}
+\contentsline {subsection}{\numberline {3.2}Challenges}{3}
+\contentsline {subsubsection}{\numberline {3.2.1}The Marionette.js framework}{3}
+\contentsline {subsubsection}{\numberline {3.2.2}MYO}{3}
+\contentsline {subsubsection}{\numberline {3.2.3}JxBrowser}{3}
+\contentsline {section}{\numberline {4}Evaluation}{3}
+\contentsline {subsection}{\numberline {4.1}Self-evaluation}{3}
+\contentsline {subsection}{\numberline {4.2}Questionnaire}{3}
+\contentsline {subsection}{\numberline {4.3}Evaluation by others}{3}
