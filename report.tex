@@ -157,15 +157,14 @@ The Myo\footnote{https://www.myo.com/} bracelet is a something which can be used
 Another issue was the problem that comes with working with hardware, rather than software alone: Only one team member could take the Myo bracelet home and do some testing and programming with it. This caused delays in the development process, since it was very hard to synchronize work progress. An example: We decided to implement feature \texttt{A} in our application. One team member had set up the layout and views of the feature, another member coded some processing functions for the feature and the third team member was in charge of writing the code to send the myo gestures to our client side JavaScript. The problem was that, obviously, not everyone could work for the project 24/24 hours every day. This made development slower because we sometimes had to wait on another member to finish his assigned task. The other members couldn't just go and drive several tens of kilometers to go and fetch the Myo bracelet, so that they could write the code themselves.
 A last issue was that the Myo bracelet needs some warming up and synchronization before you can use it. This synchronization phase requires the user to perform a \textit{wave-out} gesture for several seconds to even a minute long. This resulted into cramps in our lower arm more than once.
 
-Finally, we had to find a good way to point precisely on the screen with the myo. The data we get from the myo are scaled x and y values. The x value ranges from 0 to scale, this range corresponds to one full body rotation with your arm stretched in front of you. The y value also ranges from 0 to scale, pointing to the floor will correspond to the value 0 and pointing to the ceiling will correspond to the max value. 
+Finally, we had to find a good way to point precisely on the screen with the Myo. The data we get from the Myo are scaled x and y values. The x value ranges from 0 to scale, this range corresponds to one full body rotation with your arm stretched in front of you. The y value also ranges from 0 to scale, pointing to the floor will correspond to the value 0 and pointing to the ceiling will correspond to the max value. 
 
 There are many ways of handling these x and y values to simulate the pointing to the screen. For the sake of simplicity we decided to let the user calibrate the screen at the start of the application. The user will have to follow the instructions on the screen. We ask the user to first point to the middle of the screen, make a fist gesture, then point to the left upper screen corner and finish with a fist gesture. Based on these two points we can determine the other 3 corners.  This is really simple, but yet very powerful because the user can decide how en where he will point, and it allows the user to point in a way he feels the most comfortable with.
 
-For this project we assume that the user will calibrate the screen somewhere in front of him, so we will not handle the extreme cases where the user calibrates the screen pointing to the floor or to the ceiling. This is to avoid the 0 and max value, this also means the conversion of the y value of the Myo to the y value on the screen is straightforward. So the only real difficulty was converting the x value of the Myo to the x value on the screen. More specifically when the user calibrates the screen around the edge x values of the Myo. If the user calibrates the screen between the 0 and max value the conversion is straightforward. We will demonstrate and explain both cases. TODO:nico Figure \ref{diffconv}, Figure \ref{easyconv}
+For this project we assume that the user will calibrate the screen somewhere in front of him, so we will not handle the extreme cases where the user calibrates the screen pointing to the floor or to the ceiling. This is to avoid the 0 and max value, this also means the conversion of the y value of the Myo to the y value on the screen is straightforward. So the only real difficulty was converting the x value of the Myo to the x value on the screen. More specifically when the user calibrates the screen around the edge x values of the Myo. If the user calibrates the screen between the 0 and max value the conversion is straightforward. We will demonstrate and explain both cases.
 
-On the image of the easy case we can see that the screen is inside the total range of x, thus the left-corner x value is greater than the center x value which is greater than the x value of the right-corner ( x2 > x1 > x3 ).
+Figure \ref{easyconv} demonstrates the easy case. We can see that the screen is inside the total range of x, thus the left-corner x value is greater than the center x value which is greater than the x value of the right-corner ( x2 $>$ x1 $>$ x3 ).
 
-In the difficult case the screen crosses the edge of the x range. The left-corner x value is smaller than the center x value ( x2 < x1 ). This means the conversion of the x value was more complex.
 
 \begin{figure}[!ht]
   \centering
@@ -173,6 +172,8 @@ In the difficult case the screen crosses the edge of the x range. The left-corne
   \caption{The easy conversion}
 	\label{easyconv}
 \end{figure}
+
+In the difficult case on Figure \ref{diffconv}, the screen crosses the edge of the x range. The left-corner x value is smaller than the center x value ( x2 $<$ x1 ). This means the conversion of the x value was more complex.
 
 \begin{figure}[!ht]
   \centering
