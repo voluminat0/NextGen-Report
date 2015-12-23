@@ -27,32 +27,6 @@
 
 \maketitle
 
-Source code (December 23): The source code of your next generation user interface together with
-detailed and complete instructions on how to run it (i.e. step by step instructions together with possible
-dependencies, required software and technologies, etc.). Note that your source code should be
-documented: every important method and class should be annotated with a description of its goal and
-functionality. If you use a tutorial, open source framework or other online code, you have to mention
-this and cite the author’s website. We check for code plagiarism! The source code has to be sent to
-Sandra Trullemans (strullem@vub.ac.be).
-
-Requirements:
-Myo Connect (https://developer.thalmic.com/downloads)
-Eclipse or any other IDE for Java with Maven support (https://www.eclipse.org/downloads/)
-Node.js (https://nodejs.org/en/download)
-	Express package: npm install express
-	Request package: npm install request
-
-Starting the application
-- Start Myo
-	- insert Myo USB in laptop
-	- warm-up Myo
-- Start node.js: 
-	- cd *project root directory*
-	- node Main.js
-- Run the project as a Java application
-
-
-
 \tableofcontents
 
 \section{Problem statement}
@@ -65,6 +39,7 @@ Our approach consists of groups and tags to create a flat, nevertheless usable, 
 \subsection{Usability requirements}
 
 \subsection{Functional Requirements}
+TODO: alles naar tabel NICOHHHHHHHHHHHHH
 The two main functionalities of our program consist of browsing and manipulating files, as well as providing a way of structuring folders in a custom way. The user should be able to browse the files easily using intuitive gestures. Next to browsing, we will introduce a new way of structuring files and folders, customized to the user its preferences. What follows next is a more specified way on how the file browsing will (probably) work. 
 \\\\
 Selecting files and folders will be based on the direction we point with our arm. Hovering a certain folder will result in a (possibly customizable) preview. Browsing through the contents (i.e. files/folders) of a folder will be possible by rotating the arm and/or by doing the left and right swipe gesture to move backward and forward through the list of contents. To rename and search files we will use the keyboard as the primary input device, but we will also attempt to use voice recognition software as a supplementary input source to support people with a physical disability.
@@ -113,23 +88,17 @@ Navigation through the folder hierarchy is done by implementing some sort of bre
 Our approach to the interaction design is activity-centered design because we are focusing on the behavior of a file system. 
 
 \subsection{Interactions}
-Instructing interactions is done mainly by the Myo. We define the following five gestures: \texttt{FIST}, \texttt{FINGERS\_SPREAD}, \texttt{WAVE\_IN}, \texttt{WAVE\_OUT} and \texttt{DOUBLE\_TAP}. We decided not to use the \texttt{WAVE\_OUT} gesture because the Myo did not recognize this gesture very well. Also we noticed that, while performing the gesture, the position of the pointer drifted away quite far, thus doing the gesture on another position then originally intended. The \texttt{DOUBLE\_TAP} gesture is used to switch between the native mode and the group mode. Specifically for modals, we use \texttt{FIST} to accept and \texttt{WAVE\_IN} to cancel. To open a menu on a specific item (i.e. file, folder, group and tag) we use the \texttt{FIST} gesture, which shows extra options that are applicable to that item. The \texttt{FINGERS\_SPREAD} gesture on an item (and other interaction elements) performs the same operation as a normal click would do. Originally, we thought of using voice recognition to input text but it wasn't accurate enough to fulfill our requirements. As a result, all input interaction is done via keyboard. 
+Instructing interactions is done mainly by the Myo. We define the following five gestures: \texttt{FIST}, \texttt{FINGERS\_SPREAD}, \texttt{WAVE\_IN}, \texttt{WAVE\_OUT} and \texttt{DOUBLE\_TAP}. We decided not to use the \texttt{WAVE\_OUT} gesture because the Myo did not recognize this gesture very well. Also we noticed that, while performing the gesture, the position of the pointer drifted away quite far, thus doing the gesture on another position then originally intended. The \texttt{DOUBLE\_TAP} gesture is used to switch between the native mode and the group mode. Specifically for modals, we use \texttt{FIST} to accept and \texttt{WAVE\_IN} to cancel. To open a menu on a specific item (i.e. file, folder, group and tag) we use the \texttt{FIST} gesture, which shows extra options that are applicable to that item. The \texttt{FINGERS\_SPREAD} gesture on an item (and other interaction elements) performs the same operation as a normal click would do. Originally, we thought of using voice recognition to input text but it wasn't accurate enough to fulfill our requirements. As a result, all input interaction is done via keyboard. Another interaction we planned to do is drag and drop of files/folders to groups. However, we didn't manage to do this because of limited gestures of Myo. Interaction with the screen is not limited to a computer screen, since you can use any screen that is connected to your computer.
 
 \subsection{Design}
 
-Since files, groups and tags are the most important part of our application, we decided to place them on the top of our application for quick access. The search bar is also placed on top because this is a feature that is often used. An extra toolbar was added to the left to provide actions that target the whole view, but these are often create and edit actions. 
+Since files, groups and tags are the most important part of our application, we decided to place them on the top of our application for quick access. The search bar is also placed on top because this is a feature that is often used. An extra toolbar was added to the left to provide actions that target the whole view, but these are often create and edit actions. We followed the design of current file browsers to display files and folders, whereas for groups and tags we chose our own design.
 
- Nicolas Omer zei:
+We focused the design of our application on the abilities of the Myo. This includes large buttons, large icons, grid views instead of plain lists, a flat design without fancy things, etc. We introduced zooming of elements when the pointer hovers an item or a button in the menu. This gives a higher usability because of the small inaccuracy of the pointing. 
 
-"interaction" was describing how the potential user would interact with the application. In our case, it is an Android application on a smartphone so it is via the touch screen, simple gesture, he uses tabs to navigate, push buttons, etc... (we explain all the things that have to be known to access every feature of the application)
+At first, we were going to use some sort of radial menu and the rotation of the Myo to select a option. However, we didn't manage to implement this for the Myo because the source code did not support adding custom events without rewriting it all. Therefore we opted to make a normal menu with options. We also think that the rotation gesture in combination of other gestures of the Myo is not accurate enough, so in the end we would have to switch to a normal menu anyways.
 
-So in our case that would be the 5 movements you have for the Myo I imagine + the fact that you can use another screen than the one of your computer, etc...
-
-For the "design", we did pretty much the same than in the section "Style guidelines" for the project of the "User Interface Design" course (don't know if you have this one). 
-
-Anyway : we describe how the design process was conducted (how we  came to such layout / display). Why a list view is better for storing your accounts (since you could have many), that we have drop-down menus to select a specific item in a list, etc... 
-
-Don't know if that is what they expect but it's what we have wink-emoticon
+We tried to make sure we followed the most important principles such as consistency, feedback, simplicity and Gestalt principles.
 
 \section{Technical report}
 
@@ -159,7 +128,7 @@ A last issue was that the Myo bracelet needs some warming up and synchronization
 
 Finally, we had to find a good way to point precisely on the screen with the Myo. The data we get from the Myo are scaled x and y values. The x value ranges from 0 to scale, this range corresponds to one full body rotation with your arm stretched in front of you. The y value also ranges from 0 to scale, pointing to the floor will correspond to the value 0 and pointing to the ceiling will correspond to the max value. 
 
-There are many ways of handling these x and y values to simulate the pointing to the screen. For the sake of simplicity we decided to let the user calibrate the screen at the start of the application. The user will have to follow the instructions on the screen. We ask the user to first point to the middle of the screen, make a fist gesture, then point to the left upper screen corner and finish with a fist gesture. Based on these two points we can determine the other 3 corners.  This is really simple, but yet very powerful because the user can decide how en where he will point, and it allows the user to point in a way he feels the most comfortable with.
+There are many ways of handling these x and y values to simulate the pointing to the screen. For the sake of simplicity we decided to let the user calibrate the screen at the start of the application. The user will have to follow the instructions on the screen. We ask the user to first point to the middle of the screen, make a fist gesture, then point to the left upper screen corner and finish with a fist gesture. Based on these two points we can determine the other three corners.  This is really simple, but yet very powerful because the user can decide how en where he will point, and it allows the user to point in a way he feels the most comfortable with.
 
 For this project we assume that the user will calibrate the screen somewhere in front of him, so we will not handle the extreme cases where the user calibrates the screen pointing to the floor or to the ceiling. This is to avoid the 0 and max value, this also means the conversion of the y value of the Myo to the y value on the screen is straightforward. So the only real difficulty was converting the x value of the Myo to the x value on the screen. More specifically when the user calibrates the screen around the edge x values of the Myo. If the user calibrates the screen between the 0 and max value the conversion is straightforward. We will demonstrate and explain both cases.
 
@@ -378,12 +347,15 @@ Next to the complexity of our application, we also wanted to know what the user 
 
 When asking if people found our application inconsistent, most of the evaluators didn't really have an opinion. This might be because they didn't fully understand the question. What we wanted to know, was that when a user wants to perform some task, he has to perform a sequence of actions. If he then wants to perform a similar task, he should also perform a similar action sequence. The evaluators who did understand the question, all answered that our application is consistent.
 
-The overall outcome of question seven is that our application would be hard to learn. Although we don't agree on this, we do understand why people might think in this way. When we asked these people to evaluate our application, they all had to learn the gestures and functionalities in a limited timeframe. This probably influenced them in a negative manner, resulting in these answers.
+The overall outcome of question seven is that our application would be hard to learn. Although we don't agree on this, we do understand why people might think in this way. When we asked these people to evaluate our application, they all had to learn the gestures and functionalities in a limited time frame. This probably influenced them in a negative manner, resulting in these answers.
 
 "I find the product awkward to work with". This question was based on the fact that people do have to make strange gestures in front of their screen, which might be a bit awkward. With awkward, me meant that the user might feel uncomfortable when using the application, but also that the user did not find it handy to use the Myo bracelet. 50\% of the evaluators were uncomfortable when using the application. This is a rather high percentage, which might indicate that the world isn't ready to combine working on a computer and using gestures to control that computer.
 
-We attempted to display as much relevant information as possible on the screen, which resulted in a positive evaluation for question nine. Users seem to know what the enabled tasks are when they use our application. We are very happy that this is the case, since using a filebrowser should be intuitive and should not take that much time to perform a certain task.
+We attempted to display as much relevant information as possible on the screen, which resulted in a positive evaluation for question nine. Users seem to know what the enabled tasks are when they use our application. We are very happy that this is the case, since using a file browser should be intuitive and should not take that much time to perform a certain task.
 
-Question ten is very similar to question seven. We again suspect that the limited timeframe to learn and understand the different gestures and functionalities might have influenced the different evaluators. We could argue that these answers might be a bit too subjective. When they first introduced a mouse as a pointer, people also had to learn how to use it and what the different mousebuttons did.
+Question ten is very similar to question seven. We again suspect that the limited time frame to learn and understand the different gestures and functionalities might have influenced the different evaluators. We could argue that these answers might be a bit too subjective. When they first introduced a mouse as a pointer, people also had to learn how to use it and what the different mouse buttons did.
+
+\section{Conclusion}
+To conclude, we think that our application is not ready for real-world usage. The project was interesting to develop, however the usability is limited. This is mainly because of the Myo and missing functionalities in our application due to the limited time. We think that, after a few years of development of the Myo, there will be a more accurate detection of gestures and possibly a way to define our own gestures. The five gestures that are currently available are too limited to interact with the screen and to map functionalities to specific gestures. Nevertheless, we expect that in the future gesture-based interaction will become more popular then mouse-based interaction.
 
 \end{document}
