@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.21)  23 DEC 2015 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.21)  23 DEC 2015 16:53
 entering extended mode
 **report.tex
 (report.tex
@@ -386,19 +386,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 28.
-
-Overfull \hbox (20.00067pt too wide) in paragraph at lines 38--44
-[]\OT1/cmr/m/n/10 Requirements: Myo Con-nect (https://developer.thalmic.com/dow
-nloads) Eclipse
- []
-
-
-Overfull \hbox (21.88849pt too wide) in paragraph at lines 38--44
-\OT1/cmr/m/n/10 or any other IDE for Java with Maven sup-port (https://www.ecli
-pse.org/downloads/)
- []
-
-(report.toc
+ (report.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -407,28 +395,28 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {C:/Users/Admin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}])
 \tf@toc=\write3
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 68--77
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--77
+Underfull \hbox (badness 10000) in paragraph at lines 42--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--77
+Underfull \hbox (badness 10000) in paragraph at lines 42--52
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--77
+Underfull \hbox (badness 10000) in paragraph at lines 42--52
 
  []
 
-
-Overfull \hbox (151.06998pt too wide) in paragraph at lines 79--109
+[2]
+Overfull \hbox (151.06998pt too wide) in paragraph at lines 54--84
  [] 
  []
 
@@ -436,33 +424,33 @@ Overfull \hbox (151.06998pt too wide) in paragraph at lines 79--109
 File: Images/database.jpg Graphic file (type jpg)
 
 <use Images/database.jpg>
-Package pdftex.def Info: Images/database.jpg used on input line 143.
+Package pdftex.def Info: Images/database.jpg used on input line 112.
 (pdftex.def)             Requested size: 172.5pt x 154.75233pt.
  [6 <./Images/database.jpg>] [7]
 <Images/easy-conversion.png, id=36, 481.8pt x 346.29375pt>
 File: Images/easy-conversion.png Graphic file (type png)
 
 <use Images/easy-conversion.png>
-Package pdftex.def Info: Images/easy-conversion.png used on input line 172.
+Package pdftex.def Info: Images/easy-conversion.png used on input line 141.
 (pdftex.def)             Requested size: 345.0pt x 247.97331pt.
 
 <Images/diff-conversion.png, id=38, 481.8pt x 343.2825pt>
 File: Images/diff-conversion.png Graphic file (type png)
 
 <use Images/diff-conversion.png>
-Package pdftex.def Info: Images/diff-conversion.png used on input line 179.
+Package pdftex.def Info: Images/diff-conversion.png used on input line 148.
 (pdftex.def)             Requested size: 345.0pt x 245.81702pt.
  [8]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 191.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 160.
 
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 191.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 160.
  [9 <./Images/easy-conversion.png>] [10 <./Images/diff-conversion.png>] [11]
-Overfull \hbox (3.82399pt too wide) in paragraph at lines 238--239
+Overfull \hbox (3.82399pt too wide) in paragraph at lines 207--208
 []\OT1/cmr/m/n/10 The en-vi-ron-ment doesn't re-ally in-flu-ence the find-ings.
  THe
  []
@@ -470,7 +458,7 @@ Overfull \hbox (3.82399pt too wide) in paragraph at lines 238--239
 <./Images/graph1.png, id=54, 297.11pt x 208.78pt>
 File: ./Images/graph1.png Graphic file (type png)
  <use ./Images/graph1.png>
-Package pdftex.def Info: ./Images/graph1.png used on input line 252.
+Package pdftex.def Info: ./Images/graph1.png used on input line 221.
 (pdftex.def)             Requested size: 319.99997pt x 224.87372pt.
 
 [12] [13 <./Images/graph1.png>]
@@ -478,67 +466,67 @@ Package pdftex.def Info: ./Images/graph1.png used on input line 252.
 File: ./Images/graph2.png Graphic file (type png)
 
 <use ./Images/graph2.png>
-Package pdftex.def Info: ./Images/graph2.png used on input line 264.
+Package pdftex.def Info: ./Images/graph2.png used on input line 233.
 (pdftex.def)             Requested size: 319.99997pt x 220.14839pt.
  <./Images/graph3.png, id=64, 301.125pt x 206.7725pt>
 File: ./Images/graph3.png Graphic file (type png)
 
 <use ./Images/graph3.png>
-Package pdftex.def Info: ./Images/graph3.png used on input line 275.
+Package pdftex.def Info: ./Images/graph3.png used on input line 244.
 (pdftex.def)             Requested size: 319.99997pt x 219.75517pt.
  [14 <./Images/graph2.png> <./Images/graph3.png>]
 <./Images/graph4.png, id=70, 300.12125pt x 205.76875pt>
 File: ./Images/graph4.png Graphic file (type png)
 
 <use ./Images/graph4.png>
-Package pdftex.def Info: ./Images/graph4.png used on input line 287.
+Package pdftex.def Info: ./Images/graph4.png used on input line 256.
 (pdftex.def)             Requested size: 319.99997pt x 219.41682pt.
 
 <./Images/graph5.png, id=71, 295.1025pt x 207.77625pt>
 File: ./Images/graph5.png Graphic file (type png)
 
 <use ./Images/graph5.png>
-Package pdftex.def Info: ./Images/graph5.png used on input line 298.
+Package pdftex.def Info: ./Images/graph5.png used on input line 267.
 (pdftex.def)             Requested size: 319.99997pt x 225.31123pt.
  [15 <./Images/graph4.png> <./Images/graph5.png>]
 <./Images/graph6.png, id=77, 299.1175pt x 206.7725pt>
 File: ./Images/graph6.png Graphic file (type png)
 
 <use ./Images/graph6.png>
-Package pdftex.def Info: ./Images/graph6.png used on input line 310.
+Package pdftex.def Info: ./Images/graph6.png used on input line 279.
 (pdftex.def)             Requested size: 319.99997pt x 221.22229pt.
 
 <./Images/graph7.png, id=78, 296.10625pt x 211.79124pt>
 File: ./Images/graph7.png Graphic file (type png)
 
 <use ./Images/graph7.png>
-Package pdftex.def Info: ./Images/graph7.png used on input line 321.
+Package pdftex.def Info: ./Images/graph7.png used on input line 290.
 (pdftex.def)             Requested size: 319.99997pt x 228.88948pt.
  [16 <./Images/graph6.png> <./Images/graph7.png>]
 <./Images/graph8.png, id=84, 297.11pt x 207.77625pt>
 File: ./Images/graph8.png Graphic file (type png)
  <use ./Images/graph8.png>
-Package pdftex.def Info: ./Images/graph8.png used on input line 333.
+Package pdftex.def Info: ./Images/graph8.png used on input line 302.
 (pdftex.def)             Requested size: 319.99997pt x 223.7926pt.
 
 <./Images/graph9.png, id=85, 303.1325pt x 208.78pt>
 File: ./Images/graph9.png Graphic file (type png)
  <use ./Images/graph9.png>
-Package pdftex.def Info: ./Images/graph9.png used on input line 344.
+Package pdftex.def Info: ./Images/graph9.png used on input line 313.
 (pdftex.def)             Requested size: 319.99997pt x 220.40097pt.
 
 [17 <./Images/graph8.png> <./Images/graph9.png>]
 <./Images/graph10.png, id=91, 305.14pt x 208.78pt>
 File: ./Images/graph10.png Graphic file (type png)
  <use ./Images/graph10.png>
-Package pdftex.def Info: ./Images/graph10.png used on input line 356.
+Package pdftex.def Info: ./Images/graph10.png used on input line 325.
 (pdftex.def)             Requested size: 319.99997pt x 218.95465pt.
 
 [18 <./Images/graph10.png>] [19] [20] (report.aux) ) 
 Here is how much of TeX's memory you used:
  2614 strings out of 493673
  37753 string characters out of 3141529
- 102027 words of memory out of 3000000
+ 101027 words of memory out of 3000000
  5909 multiletter control sequences out of 15000+200000
  8578 words of font info for 31 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
@@ -556,7 +544,7 @@ c/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
 onts/cm/cmtt12.pfb>
-Output written on report.pdf (20 pages, 507969 bytes).
+Output written on report.pdf (20 pages, 510536 bytes).
 PDF statistics:
  141 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
