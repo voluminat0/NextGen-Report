@@ -39,16 +39,16 @@ Our approach consists of groups and tags to create a flat, nevertheless usable, 
 \subsection{Usability requirements}
 
 \subsection{Functional Requirements}
-TODO: alles naar tabel NICOHHHHHHHHHHHHH
-The two main functionalities of our program consist of browsing and manipulating files, as well as providing a way of structuring folders in a custom way. The user should be able to browse the files easily using intuitive gestures. Next to browsing, we will introduce a new way of structuring files and folders, customized to the user its preferences. What follows next is a more specified way on how the file browsing will (probably) work. 
-\\\\
-Selecting files and folders will be based on the direction we point with our arm. Hovering a certain folder will result in a (possibly customizable) preview. Browsing through the contents (i.e. files/folders) of a folder will be possible by rotating the arm and/or by doing the left and right swipe gesture to move backward and forward through the list of contents. To rename and search files we will use the keyboard as the primary input device, but we will also attempt to use voice recognition software as a supplementary input source to support people with a physical disability.
-\\\\
-As far as customization of folders goes, we will attempt to make a more user-friendly way of grouping together files and folders, possibly using some sort of tagging system. In this way content specific folders are created and they will also have the ability to specify a custom view of the content. The concept of customization is still vague because we haven't decided yet on how we are going to implement it.
-\\\\
-Manipulating the file system is done by performing an arm gesture, after which a menu similar to the one in figure 1. This menu will consist of the possible actions that can be executed on the selected file(s) and/or folder(s).
-\\\\
-Navigation through the folder hierarchy is done by implementing some sort of breadcrumbs. Our initial thought was to use the  up- and downward gesture in order to go up and down respectively in our tree of folders.
+%TODO: alles naar tabel NICOHHHHHHHHHHHHH
+%The two main functionalities of our program consist of browsing and manipulating files, as well as providing a way of structuring folders in a custom way. The user should be able to browse the files easily using intuitive gestures. Next to browsing, we will introduce a new way of structuring files and folders, customized to the user its preferences. What follows next is a more specified way on how the file browsing will (probably) work. 
+%\\\\
+%Selecting files and folders will be based on the direction we point with our arm. Hovering a certain folder will result in a (possibly customizable) preview. Browsing through the contents (i.e. files/folders) of a folder will be possible by rotating the arm and/or by doing the left and right swipe gesture to move backward and forward through the list of contents. To rename and search files we will use the keyboard as the primary input device, but we will also attempt to use voice recognition software as a supplementary input source to support people with a physical disability.
+%\\\\
+%As far as customization of folders goes, we will attempt to make a more user-friendly way of grouping together files and folders, possibly using some sort of tagging system. In this way content specific folders are created and they will also have the ability to specify a custom view of the content. The concept of customization is still vague because we haven't decided yet on how we are going to implement it.
+%\\\\
+%Manipulating the file system is done by performing an arm gesture, after which a menu similar to the one in figure 1. This menu will consist of the possible actions that can be executed on the selected file(s) and/or folder(s).
+%\\\\
+%Navigation through the folder hierarchy is done by implementing some sort of breadcrumbs. Our initial thought was to use the  up- and downward gesture in order to go up and down respectively in our tree of folders.
 
 \begin{center}
     \begin{tabular}{ | l | l | p{5cm} |}
@@ -57,20 +57,19 @@ Navigation through the folder hierarchy is done by implementing some sort of bre
 		\\ \hline
 		
     \multirow{5}{*}{Functional Requirement} 
-		& Browse through files \& folders & TODO
+		& Browse through files \& folders & The user is used to browse the file system in the standard browsing way. The file system of our application is based on this standard, but instead of mouse clicks the user will use gestures.
 		\\ \cline{2-3}
-		& Manipulating files with default actions & TODO
+		& Manipulating files with default actions & In a file system a user should be able to rename, delete, etc.
 		\\ \cline{2-3}
-		& Search through tagged files, groups and tags & TODO
+		& Search through tagged files, groups and tags & The user should be able to search files that were tagged, tags and groups in the group system that the user created.
 		\\ \cline{2-3}		
-		& Usage of menu & TODO
+		& Usage of menu & Multiple actions on an item, different from opening that item, should be possible for the user. For example tagging files, edit groups, etc.
 		\\ \cline{2-3}
-		& Tag files & TODO
+		& Tag files & Tagging files and folders is necessary in order to categorize them, which is on of the main features of our application.
 		\\ \cline{2-3}
-		& Create groups & TODO
-		\\ \cline{2-3}
-		& NOGGGG NICOHH & TODO
-		\\ \hline		
+		& Create groups & Creating groups should be possible such that the user can create collections of files with certain tags.
+		\\ \hline	
+			
 		
     \multirow{2}{*}{Data Requirement} & Access to file system & The data we want to display and manipulate in our user interface comes straight from the underlying file system, i.e. information about files and folders. Our application should be able to access the file system without limitation. 
 		\\ \cline{2-3}
