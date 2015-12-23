@@ -38,6 +38,26 @@ Our approach consists of groups and tags to create a flat, nevertheless usable, 
 
 \subsection{Usability requirements}
 
+\subsection{Functional Requirements}
+The two main functionalities of our program consist of browsing and manipulating files, as well as providing a way of structuring folders in a custom way. The user should be able to browse the files easily using intuitive gestures. Next to browsing, we will introduce a new way of structuring files and folders, customized to the user its preferences. What follows next is a more specified way on how the file browsing will (probably) work. 
+\\\\
+Selecting files and folders will be based on the direction we point with our arm. Hovering a certain folder will result in a (possibly customizable) preview. Browsing through the contents (i.e. files/folders) of a folder will be possible by rotating the arm and/or by doing the left and right swipe gesture to move backward and forward through the list of contents. To rename and search files we will use the keyboard as the primary input device, but we will also attempt to use voice recognition software as a supplementary input source to support people with a physical disability.
+\\\\
+As far as customization of folders goes, we will attempt to make a more user-friendly way of grouping together files and folders, possibly using some sort of tagging system. In this way content specific folders are created and they will also have the ability to specify a custom view of the content. The concept of customization is still vague because we haven't decided yet on how we are going to implement it.
+\\\\
+Manipulating the file system is done by performing an arm gesture, after which a menu similar to the one in figure 1. This menu will consist of the possible actions that can be executed on the selected file(s) and/or folder(s).
+\\\\
+Navigation through the folder hierarchy is done by implementing some sort of breadcrumbs. Our initial thought was to use the  up- and downward gesture in order to go up and down respectively in our tree of folders.
+
+
+\subsection{Data Requirements}
+The data we want to display and manipulate in our user interface comes straight from the underlying file system, i.e. information about files and folders. Our application should be able to access the file system without limitation.
+There has to be enough free storage space to store meta data of our application. This will be in the form of a database file which contains relations between groups, tags, etc.
+
+\subsection{Environmental Requirements}
+The environment must allow a person to easily move the arm of the user in front of the screen. The lighting does not matter since we don't use any recognition that is depend on external factors of the environment. We will also build a cross-platform application, therefor the user is not limited to a specific operating system to use the application.
+
+
 \begin{enumerate}
 \item 
     \begin{itemize}[label=$ $]
@@ -60,7 +80,17 @@ Our approach consists of groups and tags to create a flat, nevertheless usable, 
     
 
 
-\section{Design and iteractions}
+\section{Design and interactions}
+
+Our approach to the interaction design is activity-centered design because we are focusing on the behavior of a file system. 
+
+\subsection{Interactions}
+Instructing interactions is done mainly by the Myo. We define the following five gestures: \texttt{FIST}, \texttt{FINGERS\_SPREAD}, \texttt{WAVE\_IN}, \texttt{WAVE\_OUT} and \texttt{DOUBLE\_TAP}. We decided not to use the \texttt{WAVE\_OUT} gesture because the Myo did not recognize this gesture very well. Also we noticed that, while performing the gesture, the position of the pointer drifted away quite far. The \texttt{DOUBLE\_TAP} gesture is used to switch between the native mode and the group mode. Specifically for modals, we use \texttt{FIST} to accept and \texttt{WAVE\_IN} to cancel. To open a menu on a specific item (i.e. file, folder, group and tag) we use the \texttt{FIST} gesture, which shows extra options that are applicable to that item. The \texttt{FINGERS\_SPREAD} gesture on an item (and other interaction elements) performs the same operation as a normal click would do. Originally, we thought of using voice recognition to input text but it wasn't accurate enough to fulfill our requirements. Thus, the input interaction is done via keyboard.
+
+\subsection{Design}
+
+Since files, groups and tags are the most important part of our application, we decided to place them on the top of our application.
+
  Nicolas Omer zei:
 
 "interaction" was describing how the potential user would interact with the application. In our case, it is an Android application on a smartphone so it is via the touch screen, simple gesture, he uses tabs to navigate, push buttons, etc... (we explain all the things that have to be known to access every feature of the application)
@@ -231,16 +261,29 @@ In this section we will discuss how others evaluated our project. First, we will
 
 \subsubsection{Explanation}
 
+Once the design of the application was finished, we could start with a summative evaluation. We did this by using the observational evaluation technique talk aloud. We let six people, two parents and four friends, test our application by giving them several tasks and writing down how they used our application to achieve the goal of those tasks. An example task was to check the files that had a certain tag. We would then write down how the user navigated through the different screens. Another task was to try and create a group and then add atag to that group. Something noteworthy is that we asked the users to talk about what they are doing and if they were stuck, to tell us what they were searching for. The overall outcome of this evaluation was that our application is not ready for for real-world usage and that several improvements should be done before publishing the application. We will now discuss the answers to each question in more detail.
 
+We see that the answers to the first question (I think I would use the product often) are very divergent. We think that this is because some people just really like the innovation that our project brings, but others might be used to the standard WIMP. When we asked for some feedback, we got two types of replies. The first type was that people didn't see the use of replacing the mouse with the Myo bracelet. This might be because using the Myo brings some overhead and it is also easy to get fatigue in your arm muscles by using it. The other type of reply was that they liked it because it was \textit{something different}, but not necessarily better.
 
+"I find the product unnecessarily complex". With this question we wanted to know if the combination of different gestures and the concepts of groups and tags wouldn't be too complicated for regular users. The answers made clear that most of the evaluators indeed found that our application was too complex. These evaluators are all used to a regular filebrowser and don't necessarily find the concepts of groups and tags beneficial to use. Only one of our friends was fully supportive of our project and saw the possibilities that groups and tags bring.
 
+The opinions were divided for the third question. This question basically tested the usability of our application. Some people seem to struggle when testing our project, while others don't seem to have any problems with it. We do have to note that for some users, the Myo bracelet was detecting less gestures than for other users. This might have impacted the results.
 
+Question four goes hand in hand with the second question. It seems that most people agree on needing a technical person to use the application. This somewhat baffled us because we didn't expect the results to be so one-sided. A possible explanation is that we needed to help each evaluator with synchronizing the Myo. This required the evaluator to perform a gesture for some time and afterwards we also needed to calibrate the Myo to detect the bounds of our application.
 
+Next to the complexity of our application, we also wanted to know what the user thought of our application flow. Although the fact that the evaluators found our application slightly too complex, they also found that the flow of the application was a good and logically structured flow. This wasn't that much of a surprise, since we are basically implementing the filesystem all over again, but with some conceptual and design changes.
 
+When asking if people found our application inconsistent, most of the evaluators didn't really have an opinion. This might be because they didn't fully understand the question. What we wanted to know, was that when a user wants to perform some task, he has to perform a sequence of actions. If he then wants to perform a similar task, he should also perform a similar action sequence. The evaluators who did understand the question, all answered that our application is consistent.
 
+The overall outcome of question seven is that our application would be hard to learn. Although we don't agree on this, we do understand why people might think in this way. When we asked these people to evaluate our application, they all had to learn the gestures and functionalities in a limited timeframe. This probably influenced them in a negative manner, resulting in these answers.
 
+"I find the product awkward to work with". This question was based on the fact that people do have to make strange gestures in front of their screen, which might be a bit awkward. With awkward, me meant that the user might feel uncomfortable when using the application, but also that the user did not find it handy to use the Myo bracelet. 50\% of the evaluators were uncomfortable when using the application. This is a rather high percentage, which might indicate that the world isn't ready to combine working on a computer and using gestures to control that computer.
 
+We attempted to display as much relevant information as possible on the screen, which resulted in a positive evaluation for question nine. Users seem to know what the enabled tasks are when they use our application. We are very happy that this is the case, since using a filebrowser should be intuitive and should not take that much time to perform a certain task.
 
+Question ten is very similar to question seven. We again suspect that the limited timeframe to learn and understand the different gestures and functionalities might have influenced the different evaluators. We could argue that these answers might be a bit too subjective. When they first introduced a mouse as a pointer, people also had to learn how to use it and what the different mousebuttons did.
+
+\newpage
 Source code (December 23): The source code of your next generation user interface together with
 detailed and complete instructions on how to run it (i.e. step by step instructions together with possible
 dependencies, required software and technologies, etc.). Note that your source code should be
@@ -248,5 +291,6 @@ documented: every important method and class should be annotated with a descript
 functionality. If you use a tutorial, open source framework or other online code, you have to mention
 this and cite the author’s website. We check for code plagiarism! The source code has to be sent to
 Sandra Trullemans (strullem@vub.ac.be).
+
 
 \end{document}
