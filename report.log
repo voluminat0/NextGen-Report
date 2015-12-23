@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.21)  22 DEC 2015 18:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.21)  23 DEC 2015 12:08
 entering extended mode
 **report.tex
 (report.tex
@@ -392,97 +392,116 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \tf@toc=\write3
  [1
 
-{C:/Users/Admin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] [4]
- [5] [6] <./Images/graph1.png, id=31, 297.11pt x 208.78pt>
+{C:/Users/Admin/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 42--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--51
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--51
+
+ []
+
+[2] [3] [4] [5] [6] [7] [8] <./Images/graph1.png, id=38, 297.11pt x 208.78pt>
 File: ./Images/graph1.png Graphic file (type png)
 
 <use ./Images/graph1.png>
-Package pdftex.def Info: ./Images/graph1.png used on input line 122.
+Package pdftex.def Info: ./Images/graph1.png used on input line 152.
 (pdftex.def)             Requested size: 319.99997pt x 224.87372pt.
 
-<./Images/graph2.png, id=33, 299.1175pt x 205.76875pt>
+<./Images/graph2.png, id=40, 299.1175pt x 205.76875pt>
 File: ./Images/graph2.png Graphic file (type png)
 
 <use ./Images/graph2.png>
-Package pdftex.def Info: ./Images/graph2.png used on input line 133.
+Package pdftex.def Info: ./Images/graph2.png used on input line 163.
 (pdftex.def)             Requested size: 319.99997pt x 220.14839pt.
- [7 <./Images/graph1.png> <./Images/graph2.png>]
-<./Images/graph3.png, id=40, 301.125pt x 206.7725pt>
+ [9 <./Images/graph1.png> <./Images/graph2.png>]
+<./Images/graph3.png, id=46, 301.125pt x 206.7725pt>
 File: ./Images/graph3.png Graphic file (type png)
  <use ./Images/graph3.png>
-Package pdftex.def Info: ./Images/graph3.png used on input line 144.
+Package pdftex.def Info: ./Images/graph3.png used on input line 174.
 (pdftex.def)             Requested size: 319.99997pt x 219.75517pt.
 
-<./Images/graph4.png, id=41, 304.13625pt x 209.78375pt>
+<./Images/graph4.png, id=47, 300.12125pt x 205.76875pt>
 File: ./Images/graph4.png Graphic file (type png)
 
 <use ./Images/graph4.png>
-Package pdftex.def Info: ./Images/graph4.png used on input line 155.
-(pdftex.def)             Requested size: 319.99997pt x 220.73076pt.
- [8 <./Images/graph3.png> <./Images/graph4.png>]
-<./Images/graph5.png, id=47, 299.1175pt x 206.7725pt>
+Package pdftex.def Info: ./Images/graph4.png used on input line 185.
+(pdftex.def)             Requested size: 319.99997pt x 219.41682pt.
+ [10 <./Images/graph3.png> <./Images/graph4.png>]
+<./Images/graph5.png, id=53, 295.1025pt x 207.77625pt>
 File: ./Images/graph5.png Graphic file (type png)
 
 <use ./Images/graph5.png>
-Package pdftex.def Info: ./Images/graph5.png used on input line 167.
-(pdftex.def)             Requested size: 319.99997pt x 221.22229pt.
+Package pdftex.def Info: ./Images/graph5.png used on input line 197.
+(pdftex.def)             Requested size: 319.99997pt x 225.31123pt.
 
-<./Images/graph6.png, id=48, 299.1175pt x 206.7725pt>
+<./Images/graph6.png, id=54, 299.1175pt x 206.7725pt>
 File: ./Images/graph6.png Graphic file (type png)
 
 <use ./Images/graph6.png>
-Package pdftex.def Info: ./Images/graph6.png used on input line 178.
+Package pdftex.def Info: ./Images/graph6.png used on input line 208.
 (pdftex.def)             Requested size: 319.99997pt x 221.22229pt.
- [9 <./Images/graph5.png> <./Images/graph6.png>]
-<./Images/graph7.png, id=54, 300.12125pt x 210.7875pt>
+ [11 <./Images/graph5.png> <./Images/graph6.png>]
+<./Images/graph7.png, id=60, 296.10625pt x 211.79124pt>
 File: ./Images/graph7.png Graphic file (type png)
 
 <use ./Images/graph7.png>
-Package pdftex.def Info: ./Images/graph7.png used on input line 190.
-(pdftex.def)             Requested size: 319.99997pt x 224.76848pt.
- <./Images/graph8.png, id=55, 297.11pt x 207.77625pt>
+Package pdftex.def Info: ./Images/graph7.png used on input line 220.
+(pdftex.def)             Requested size: 319.99997pt x 228.88948pt.
+ <./Images/graph8.png, id=61, 297.11pt x 207.77625pt>
 File: ./Images/graph8.png Graphic file (type png)
 
 <use ./Images/graph8.png>
-Package pdftex.def Info: ./Images/graph8.png used on input line 201.
+Package pdftex.def Info: ./Images/graph8.png used on input line 231.
 (pdftex.def)             Requested size: 319.99997pt x 223.7926pt.
- [10 <./Images/graph7.png> <./Images/graph8.png>]
-<./Images/graph9.png, id=61, 303.1325pt x 208.78pt>
+ [12 <./Images/graph7.png> <./Images/graph8.png>]
+<./Images/graph9.png, id=67, 303.1325pt x 208.78pt>
 File: ./Images/graph9.png Graphic file (type png)
  <use ./Images/graph9.png>
-Package pdftex.def Info: ./Images/graph9.png used on input line 213.
+Package pdftex.def Info: ./Images/graph9.png used on input line 243.
 (pdftex.def)             Requested size: 319.99997pt x 220.40097pt.
 
-<./Images/graph10.png, id=62, 305.14pt x 208.78pt>
+<./Images/graph10.png, id=68, 305.14pt x 208.78pt>
 File: ./Images/graph10.png Graphic file (type png)
  <use ./Images/graph10.png>
-Package pdftex.def Info: ./Images/graph10.png used on input line 224.
+Package pdftex.def Info: ./Images/graph10.png used on input line 254.
 (pdftex.def)             Requested size: 319.99997pt x 218.95465pt.
 
-[11 <./Images/graph9.png> <./Images/graph10.png>] [12] (report.aux) ) 
+[13 <./Images/graph9.png> <./Images/graph10.png>] [14] [15] [16] (report.aux) )
+ 
 Here is how much of TeX's memory you used:
- 2568 strings out of 493673
- 36787 string characters out of 3141529
- 99793 words of memory out of 3000000
- 5875 multiletter control sequences out of 15000+200000
+ 2570 strings out of 493673
+ 36821 string characters out of 3141529
+ 99803 words of memory out of 3000000
+ 5877 multiletter control sequences out of 15000+200000
  8578 words of font info for 31 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  28i,8n,32p,2050b,370s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Progra
-m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program 
-Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x
-86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files (x86)/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x86)/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on report.pdf (12 pages, 421975 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C
+:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Pro
+gram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program F
+iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files
+ (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (x86)/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files (x86)/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on report.pdf (16 pages, 431424 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 119 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
