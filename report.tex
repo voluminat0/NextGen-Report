@@ -134,23 +134,15 @@ For this project we assume that the user will calibrate the screen somewhere in 
 
 Figure \ref{easyconv} demonstrates the easy case. We can see that the screen is inside the total range of x, thus the left-corner x value is greater than the center x value which is greater than the x value of the right-corner ( x2 $>$ x1 $>$ x3 ).
 
-
 \begin{figure}[!ht]
   \centering
-      \centerline{\includegraphics[width=1\textwidth]{Images/easy-conversion.png}}
-  \caption{The easy conversion}
+      \centerline{\includegraphics[width=0.7\textwidth]{Images/easy-conversion.png}
+			\includegraphics[width=0.7\textwidth]{Images/diff-conversion.png}}
+  \caption{The easy conversion (left) \& the difficult conversion (right)}
 	\label{easyconv}
 \end{figure}
 
-In the difficult case on Figure \ref{diffconv}, the screen crosses the edge of the x range. The left-corner x value is smaller than the center x value ( x2 $<$ x1 ). This means the conversion of the x value was more complex.
-
-\begin{figure}[!ht]
-  \centering
-      \centerline{\includegraphics[width=1\textwidth]{Images/diff-conversion.png}}
-  \caption{The difficult conversion}
-	\label{diffconv}
-\end{figure}
-
+In the difficult case on Figure \ref{easyconv}, the screen crosses the edge of the x range. The left-corner x value is smaller than the center x value ( x2 $<$ x1 ). This means the conversion of the x value was more complex.
 
 \subsubsection{JxBrowser}
 To bridge the gap between Java and JavaScript, we used the JxBrowser component. When we initially looked the component up, it looked very promising. A 30-day trial was available so we could start right away. After that we could get a free educational license, after filling in some forms. We soon realized that the JxBrowser component was rather processor-heavy, and that its responsiveness was sometimes rather low. The component came in the form of a \textit{.jar} file, and modified something in the registry of our computer, so that we couldn't just use a new 30-day trial when the old one expired. This lead to several problems. In order to obtain an educational license, we first had to fill in a form with some information about the VUB. After that, we also had to ask Dr. Signer to send a recommendation mail to confirm that we are indeed students at the VUB. When the developers of the JxBrowser component finally sent us the license, it didn't work. There was some sort of bug that didn't change the registry key, so we kept getting the error that our 30-day trial had expired. By the time that we figured this out together with the developers, we had lost quite some time.
